@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="CGCStudyHub - Free study materials, notes, question papers, and resources for CGC students across B.Tech, Pharma, IT, and more. We are helping student to get stress free about study content." />
+  <title>CGCStudyHub</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="/mainlogo.webp" />
+  <link rel="shortcut icon" type="image/webp" href="/mainlogo.webp" />
+  <link rel="apple-touch-icon" href="/mainlogo.webp" />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TQFC7BD5');</script>
+  <!-- End Google Tag Manager -->
+  <script async src="https://js.puter.com/v2/"></script>
+
+  <!-- Theme initialization script to prevent FOUC -->
+  <script>
+    (function() {
+      const darkMode = localStorage.getItem("darkMode") === "true" ||
+        (!localStorage.getItem("darkMode") && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      
+      if (darkMode) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+
+  <!-- 🔑 Preload Inter 400 -->
+  <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Preload hero + logo images -->
+  <link rel="preload" as="image" href="/src/assets/image/mainlogo.png" />
+  <link rel="preload" as="image" href="/lottie/Btech.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/lottie/Hero.webp" fetchpriority="high" />
+
+  <!-- Loading screen styles to prevent FOUC -->
+  <style>
+    /* Loading screen to prevent white flash */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    }
+
+    #loading-screen.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loading-logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .loading-text {
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Hide root initially */
+    #root {
+      opacity: 0;
+      transition: opacity 0.5s ease-in;
+    }
+
+    #root.loaded {
+      opacity: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <img src="/mainlogo.webp" alt="CGCStudyHub Logo" class="loading-logo" />
+    <div class="loading-text">CGCStudyHub</div>
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQFC7BD5" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Loading screen removal script -->
+  <script>
+    // Hide loading screen once React app is ready
+    window.addEventListener('load', function() {
+      setTimeout(() => {
+        const loadingScreen = document.getElementById('loading-screen');
+        const root = document.getElementById('root');
+        
+        if (loadingScreen && root) {
+          // Add loaded class to root for fade in
+          root.classList.add('loaded');
+          
+          // Fade out loading screen
+          loadingScreen.classList.add('fade-out');
+          
+          // Remove loading screen from DOM after animation
+          setTimeout(() => {
+            if (loadingScreen.parentNode) {
+              loadingScreen.parentNode.removeChild(loadingScreen);
+            }
+          }, 500);
+        }
+      }, 100); // Small delay to ensure React has rendered
+    });
+
+    // Fallback: Remove loading screen after maximum time
+    setTimeout(() => {
+      const loadingScreen = document.getElementById('loading-screen');
+      const root = document.getElementById('root');
+      
+      if (loadingScreen) {
+        root?.classList.add('loaded');
+        loadingScreen.classList.add('fade-out');
+        setTimeout(() => {
+          if (loadingScreen.parentNode) {
+            loadingScreen.parentNode.removeChild(loadingScreen);
+          }
+        }, 500);
+      }
+    }, 3000); // Maximum 3 seconds loading time
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGVJ9J40ES"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MGVJ9J40ES');
+  </script>
+</body>
+
+</html>

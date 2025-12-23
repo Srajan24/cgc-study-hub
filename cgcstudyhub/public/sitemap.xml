@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url><loc>https://cgcstudyhub.in/</loc></url>
+
+  <!-- BTech -->
+  <url><loc>https://cgcstudyhub.in/btech</loc></url>
+
+  <!-- CSE -->
+  <url><loc>https://cgcstudyhub.in/btech/cse</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/cse/firstsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/cse/secondsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/cse/thirdsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/cse/fourthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/cse/fifthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/cse/sixthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/cse/seventhsemester</loc></url>
+
+  <!-- ECE -->
+  <url><loc>https://cgcstudyhub.in/btech/ece</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/ece/firstsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/ece/secondsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/ece/thirdsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/ece/fourthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/ece/fifthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/ece/sixthsemester</loc></url>
+
+  <!-- IT -->
+  <url><loc>https://cgcstudyhub.in/btech/it</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/it/firstsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/it/secondsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/it/thirdsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/it/fourthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/it/fifthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/it/sixthsemester</loc></url>
+
+  <!-- AIDS -->
+  <url><loc>https://cgcstudyhub.in/btech/aids</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aids/firstsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aids/secondsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aids/thirdsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aids/fourthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aids/fifthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aids/sixthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aids/seventhsemester</loc></url>
+
+  <!-- AIML -->
+  <url><loc>https://cgcstudyhub.in/btech/aiml</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aiml/firstsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aiml/secondsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aiml/thirdsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aiml/fourthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aiml/fifthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/btech/aiml/sixthsemester</loc></url>
+
+  <!-- Pharma -->
+  <url><loc>https://cgcstudyhub.in/pharma</loc></url>
+  <url><loc>https://cgcstudyhub.in/pharma/bpharma</loc></url>
+  <url><loc>https://cgcstudyhub.in/pharma/bpharma/firstsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/pharma/bpharma/secondsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/pharma/bpharma/thirdsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/pharma/bpharma/fourthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/pharma/bpharma/fifthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/pharma/bpharma/sixthsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/pharma/bpharma/seventhsemester</loc></url>
+  <url><loc>https://cgcstudyhub.in/pharma/bpharma/eighthsemester</loc></url>
+
+  <!-- Other pages -->
+  <url><loc>https://cgcstudyhub.in/projects</loc></url>
+  <url><loc>https://cgcstudyhub.in/certificates</loc></url>
+
+</urlset>
